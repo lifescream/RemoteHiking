@@ -1,0 +1,480 @@
+﻿<!doctype html>
+<html class="" lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Remote Hiking - Single hike template</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+		<link rel="stylesheet" href="css/jquery-selectbox.css" />
+		<link rel="stylesheet" href="css/responsive-grid.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="css/colorbox.css" />
+
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/styles-ie8-and-down.css" />
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<header class="section">
+
+			<div class="header-top-wrapper">
+				<div class="zone-header-top zone clearfix">
+					<div class="header-top-left container-8">
+						<div class="user-links">
+							<div class="login">
+								<a href="#" id="login-link" class="login-link">Login</a>
+								<form id="login-form" class="login-form">
+									<input class="text-input-grey" type="text" placeholder="Login">
+									<input class="text-input-grey" type="text" placeholder="Password">
+									<a href="#" class="password-restore">Forgot Password?</a>
+									<input class="button-2-green" type="submit" value="Login">
+								</form>
+							</div>
+							<div class="register">
+								<a href="#" id="register-link" class="register-link">Register</a>
+								<form id="register-form" class="register-form">
+									<input class="text-input-grey" type="text" placeholder="Login">
+									<input class="text-input-grey" type="text" placeholder="Company Name">
+									<input class="text-input-grey" type="text" placeholder="Contact Person Name">
+									<input class="text-input-grey" type="text" placeholder="E-mail">
+									<input class="text-input-grey" type="text" placeholder="Password">
+									<input class="text-input-grey" type="text" placeholder="Repeat Password">
+									<div href="#" class="fields-required">All Fields Are Required</div>
+									<input class="button-2-green" type="submit" value="Register">
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-top-right container-16">
+						<div class="social-links block">
+						</div>
+						<div class="languages block">
+						</div>
+					</div>
+
+				</div><!-- end of .zone-header-top -->
+			</div><!-- end of .header-top-wrapper -->
+
+			<div class="header-wrapper">
+				<div class="zone-header zone clearfix">
+
+					<div class="header-left container-6">
+
+						<div class="logo block">
+							<a href="#">
+                                <img src="images/logo2.png" alt="" />
+							</a>
+						</div>
+
+					</div>
+
+					<div class="header-right container-18">
+
+						<div class="adverisement block">
+							
+						</div>
+
+					</div>
+
+				</div><!-- end of .zone-header -->
+			</div><!-- end of .header-wrapper -->
+
+			<div class="main-menu-wrapper">
+				<div class="zone-main-menu zone clearfix">
+
+					<div class="main-menu-container container-24">
+
+						<div class="main-menu block">
+							<ul id="sf-menu">
+								<li class="empty neighbour-left">
+									<div></div>
+								</li>
+								<li class="first">
+									<a href="#">HOME</a>
+								</li>
+								<li class="">
+                                    <a href="hike-search.html">SEARCH HIKE</a>
+								</li>
+                                <li class="">
+                                    <a href="hike-submit.html">SUBMIT HIKE</a>
+								</li>
+								<li class="">
+									<a href="#">ABOUT US</a>
+								</li>
+                                <li class="empty">
+									<div>&nbsp;</div>
+								</li>
+								<li class="">
+									<a href="#">CONTACT US</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div><!-- end of .zone-main-menu -->
+			</div><!-- end of .main-menu-wrapper -->
+
+		</header>
+
+		<section class="section content">
+			<div class="map-wrapper">
+
+				<div id="map" class="map"></div>
+
+				<div class="hide-map-control">
+					<a href="#" id="hide-map-button" class="hide-map-button map-expanded">Hide Map</a>
+				</div>
+
+			</div>
+
+            <div class="industries-tabs-wrapper">
+                <div class="zone-industries-tabs zone clearfix">
+                    <div class="industries-tabs-container container-24">
+                        <div id="industries-tabs" class="industries-tabs block">
+                            <ul class="clearfix">
+                                <li class="first active">
+                                    <a href="#" id="airport" class="airport"></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#" id="restaurant" class="restaurant"></a>
+                                </li>
+                                <li class="active">
+                                    <a href="#" id="shop" class="shop"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div><!-- end of .zone-industries-tabs -->
+            </div><!-- end of .industries-tabs-wrapper -->
+
+			<div class="content-wrapper">
+				<div class="zone-content equalize zone clearfix">
+
+					<div class="content-container container-16">
+
+                        <form id="submit-hike" class="submit-message-form">
+
+                            <div class="single-company block">
+                                <div class="block-title">
+                                    <input type="text" name="title" class="text-input-grey title" placeholder="Title *" />
+                                </div>
+                                <div class="company-info clearfix">
+                                    <div class="company-info-description">
+                                        <textarea name="description" class="text-input-grey description" placeholder="Description *"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="block-title">
+                                    <h3>Trail Info</h3>
+                                </div>
+                                <div class="company-details clearfix">
+                                    <div class="company-hours">
+                                        <div class="detail">
+                                            <span class="detail-label">Added on:</span>24 August 2013
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Last update on:</span>24 August 2013
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Type:</span>
+                                            <select id="" name="category-default" tabindex="2">
+                                                <option value="">- Select Type -</option>
+                                            </select>
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Difficulty</span>
+                                            <select id="" name="category-default" tabindex="2">
+                                                <option value="">- Select Difficulty -</option>
+                                            </select>
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Distance:</span>
+                                            <input type="text" name="name" class="text-input-submit-small" placeholder="ex. 100" /> km
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Duration:</span>
+                                            <input type="text" name="name" class="text-input-submit-small" placeholder="ex. 5-7" /> days
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Elevation Gain:</span>
+                                            <input type="text" name="name" class="text-input-submit-small" placeholder="ex. 350" /> m
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Trails:</span>
+                                            <select id="" name="category-default" tabindex="2">
+                                                <option value="">- Select Trails type -</option>
+                                                <option value="">No Trails</option>
+                                                <option value="">Some Trails</option>
+                                                <option value="">All Trails</option>
+                                            </select>
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Recommended season:</span>
+                                            <input type="text" name="name" class="text-input-submit-small" placeholder="ex. Late June - Early September" />
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Activities:</span><div class="detail-content">Hiking, camping, canoeing, fishing, fly fishing, birding, kayaking, mountain biking, kayaking, rock climbing, snowshoeing, trail running, cross country skiing</div>
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Features:</span><div class="detail-content">Beach, caves, forest, lakes, hot springs, river, views, waterfall, wildlife, wildflowers</div>
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Wildlife: </span>
+                                            <input type="text" name="name" class="text-input-submit-small" placeholder="ex. Reindeer" />
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Cellphone reception:</span>
+                                            <select id="" name="category-default" tabindex="2">
+                                                <option value="">- Select -</option>
+                                                <option value="">Yes</option>
+                                                <option value="">No</option>
+                                                <option value="">Unpredictable</option>
+                                            </select>
+                                        </div>
+                                        <div class="detail">
+                                            <span class="detail-label">Water purification: </span>
+                                            <select id="" name="category-default" tabindex="2">
+                                                <option value="">- Select -</option>
+                                                <option value="">Yes</option>
+                                                <option value="">No</option>
+                                                <option value="">Unpredictable</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-title">
+                                    <h3>Photos</h3>
+                                </div>
+                                <div class="company-photos clearfix">
+                                    <div class="photo-thumbnails">
+                                        <div class="thumbnail current">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0340.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0340.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0361.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0361.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0449.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0449.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0588.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0588.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0449.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0449.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0828.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0828.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0588.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0588.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0449.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0449.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="thumbnail">
+                                            <div class="thumbnail-inner">
+                                                <a href="images/content/IMG_0361.JPG" class="portfolio-enlarge">
+                                                    <img src="images/content/IMG_0361.JPG" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-title">
+                                    <h3>Getting There</h3>
+                                </div>
+                                <div class="hike-getting-there clearfix">
+                                    <div class="hike-getting-there-description">
+                                       <textarea name="getting-there" class="text-input-grey description" placeholder="Getting there"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="block-title">
+                                    <h3>Add Additional Information</h3>
+                                </div>
+                                <div class="hike-additional-info clearfix">
+                                    <div class="hike-additional-info-description">
+                                        <textarea name="additional-info" class="text-input-grey description" placeholder="Additional Info"></textarea>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    &nbsp;
+                                </div>
+
+                            </div>
+                        </form>
+				    </div><!-- end of .content-container -->
+
+					<div class="sidebar-container container-8">
+                        <div class="latest-news block">
+                          <div class="block-title">
+								<h3>How to submit a hike</h3>
+							</div>
+							<ul class="entries-list">
+								<li class="clearfix">
+									<a href="#" class="entry-title">Additional information</a>
+									<div class="entry-excerpt">Click on the notice icon (<img src="images/notification-notice.png" alt="notice" />) next to an item to add additional information.</div>
+								</li>
+                                <li class="clearfix">
+                                    <a href="#" class="entry-title">Toggle Point of interest</a>
+                                    <div class="entry-excerpt">Click on the green icons underneath the map to toggle Points of Interest on and off.</div>
+                                </li>
+							</ul>
+                        </div>
+					</div><!-- end of .sidebar-container -->
+
+				</div><!-- end of .zone-content -->
+			</div><!-- end of .content-wrapper -->
+
+		</section>
+
+		<footer class="section">
+
+			<div class="footer-wrapper">
+				<div class="zone-footer zone clearfix">
+
+					<div class="footer-container container-24">
+
+						<div class="website-short-description block">
+							<img src="images/logo-small.png" class="logo" alt="" />
+							<div class="description-text">
+								Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis.
+							</div>
+						</div>
+
+						<div class="block">
+						    &nbsp;
+						</div>
+
+                        <div class="block">
+						   &nbsp;
+						</div>
+
+						<div class="recent-posts block">
+							<h3 class="title">Company</h3>
+							<ul>
+								<li class="first">
+									<a href="#" class="text-green">About Us</a>
+								</li>
+								<li>
+									<a href="#" class="text-green">Contact Us</a>
+								</li>
+								<li class="last">
+									<a href="#" class="text-green">Advertisement</a>
+								</li>
+							</ul>
+						</div>
+
+						
+
+					</div>
+
+				</div><!-- end of .zone-footer -->
+			</div><!-- end of .footer-wrapper -->
+
+			<div class="copyright-wrapper">
+				<div class="zone-copyright zone clearfix">
+
+					<div class="copyright-left-container container-12">
+
+						<div class="copyright block">&copy; All Rights Reserved. Maintained by Atka Solutions</div>
+
+					</div>
+
+					<div class="copyright-right-container container-12">
+
+						<div class="social-links block">
+                            <!--
+							<a href="http://www.facebook.com">
+								<img src="images/facebook-icon.png" alt="" />
+							</a>
+							<a href="http://www.google.com">
+								<img src="images/google-icon.png" alt="" />
+							</a>
+							<a href="http://www.twitter.com">
+								<img src="images/twitter-icon.png" alt="" />
+							</a>
+							<a href="http://www.linkedin.com">
+								<img src="images/linkedin-icon.png" alt="" />
+							</a>
+							<a href="http://www.pinterest.com">
+								<img src="images/pinterest-icon.png" alt="" />
+							</a>
+							<a href="http://www.dribbble.com">
+								<img src="images/dribbble-icon.png" alt="" />
+							</a>
+                            -->
+						</div>
+
+					</div>
+
+				</div><!-- end of .zone-copyright -->
+			</div><!-- end of .copyright-wrapper -->
+
+		</footer>
+
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="scripts/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-ui-1.10.3.custom.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.gomap-1.3.2.min.js"></script>
+		<script type="text/javascript" src="scripts/map.js"></script>
+		<script type="text/javascript" src="scripts/jquery.selectbox-0.6.1.js"></script>
+		<script type="text/javascript" src="scripts/jquery.tweet.js"></script>
+		<script type="text/javascript" src="scripts/jflickrfeed.min.js"></script>
+		<script type="text/javascript" src="scripts/superfish.js"></script>
+		<script type="text/javascript" src="scripts/jquery.mobilemenu.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.placeholder.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.raty.min.js"></script>
+		<script type="text/javascript" src="scripts/scripts.js"></script>
+
+	</body>
+
+</html>
